@@ -32,3 +32,22 @@
 #   Nana: HOW'S SCHOOL GOING?
 #   BYE
 #   Nana: BYE SWEETIE!
+count = 0
+puts 'HI SWEETIE! GIVE NANA A KISS!'
+loop do
+  input = gets.chomp
+  if input != input.upcase
+    count = 0
+    puts 'HUH?! SPEAK UP, SWEETIE!'
+  elsif input == 'BYE'
+    count += 1
+    puts "HOW'S SCHOOL GOING?" unless count == 3
+    if count == 3
+      puts 'BYE SWEETIE!'
+      break
+    end
+  else
+    count = 0
+    puts "NOT SINCE #{Random.rand(1930..1950)}!"
+  end
+end

@@ -8,3 +8,6 @@
 # divisible by 400 (e.g. 2000).
 #
 # TIP: I expect you to use a loop and a few modulo operations.
+1900.upto(2000) do |n|
+  puts n if n % 4 == 0
+end

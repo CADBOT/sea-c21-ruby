@@ -16,3 +16,17 @@
 #   Go to the store and buy some more, 3 bottles of beer on the wall!
 #
 # TIP: I expect you to use a loop.
+3.downto(0).each do |n|
+  s1 = "#{n} bottles of beer on the wall, #{n} bottles of beer!"
+  # Modify for special cases of singular bottle or "no more" bottles
+  s1.gsub!(/bottles/, 'bottle') if n == 1
+  s1.gsub!(/0/, 'no more')
+  s2 =  "Take one down, pass it around, #{n-1} bottles of beer on the wall!"
+  s2.gsub!(/bottles/, 'bottle') if n-1 == 1
+  puts s1
+  if n == 0 
+    puts "Go to the store and buy some more, 3 bottles of beer on the wall!"
+  else
+    puts s2
+  end
+end
