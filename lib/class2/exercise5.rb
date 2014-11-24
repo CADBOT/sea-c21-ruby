@@ -9,3 +9,8 @@
 #   What's your favorite number?
 #   42
 #   That's ok, I guess, but isn't 43 just a bit better?
+puts "What's your favorite number?"
+# No input validation, but not sure how early you usually
+# introduce that.
+favorite = gets.chomp.to_i
+puts "That's ok, I guess, but isn't #{favorite+1} just a bit better?"

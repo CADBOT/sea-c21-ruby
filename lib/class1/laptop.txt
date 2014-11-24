@@ -1,0 +1,31 @@
+==> uname -v
+#46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014
+==> echo $SHELL
+/usr/bin/fish
+==> echo $PATH
+/home/ubuntu/.gem/ruby/2.1.1/bin:/home/ubuntu/.rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/bin:/home/ubuntu/.rubies/ruby-2.1.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/ubuntu/tools/AWS-ElasticBeanstalk-CLI-2.6.1/eb/linux/python2.7:/home/ubuntu/bin:/home/ubuntu/bin/packer
+==> echo $EDITOR
+
+==> subl -v
+==> cat Preferences.sublime-settings
+==> ruby -v
+ruby 2.1.1p76 (2014-02-24 revision 45161) [x86_64-linux]
+==> cat .irbrc
+==> git --version
+git version 1.9.1
+==> git config -l
+branch.master.merge=refs/heads/master
+branch.master.remote=origin
+core.bare=false
+core.filemode=true
+core.logallrefupdates=true
+core.repositoryformatversion=0
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+remote.origin.url=https://github.com/codefellows/sea-c21-ruby.git
+user.email=charliec364@gmail.com
+user.name=Charles Crawford III
+==> bundle -v
+Bundler version 1.6.3
+==> bundle list
+Gems included by the bundle:
+Could not find ast-2.0.0 in any of the sources
