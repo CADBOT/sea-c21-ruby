@@ -30,7 +30,7 @@
 #
 #     'bird'.rjust(10)  #=> '      bird'
 line_len = 50
-puts "Table of Contents".center(line_len)
-puts "Chapter 1:  Getting Started".ljust(line_len-7) + "page  1"
-puts "Chapter 2:  Numbers".ljust(line_len-7) + "page  9"
-puts "Chapter 3:  Letters".ljust(line_len-7) + "page 13"
+puts 'Table of Contents'.center(line_len)
+puts 'Chapter 1:  Getting Started'.ljust(line_len - 7) + 'page  1'
+puts 'Chapter 2:  Numbers'.ljust(line_len - 7) + 'page  9'
+puts 'Chapter 3:  Letters'.ljust(line_len - 7) + 'page 13'

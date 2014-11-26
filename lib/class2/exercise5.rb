@@ -13,4 +13,4 @@ puts "What's your favorite number?"
 # No input validation, but not sure how early you usually
 # introduce that.
 favorite = gets.chomp.to_i
-puts "That's ok, I guess, but isn't #{favorite+1} just a bit better?"
+puts "That's ok, I guess, but isn't #{favorite + 1} just a bit better?"
