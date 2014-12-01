@@ -36,6 +36,21 @@
 # should stop and rethink your approach.
 
 # rubocop:disable TrivialAccessors
+#
+# It's really cool that you are teaching students about immutability like this!
 class OrangeTree
-  # replace me
+  attr_accessor :fruit
+
+  def initialize(fruit = 50)
+    @fruit = fruit
+  end
+
+  def ==(other)
+    fruit == other.fruit
+  end
+
+  def pick!(amount = 1)
+    return nil if fruit < amount
+    OrangeTree.new(fruit - amount)
+  end
 end

@@ -47,13 +47,13 @@
 
 class Integer
   def hours_in_seconds
-    # replace me
+    self * 60 * 60
   end
 end
 
 class String
   def indent(amount = 2)
-    amount # replace me
+    ' ' * amount + self
   end
 end
 
@@ -66,10 +66,10 @@ end
 
 class Array
   def second
-    # replace me
+    self[1]
   end
 
   def third
-    # replace me
+    self[2]
   end
 end
