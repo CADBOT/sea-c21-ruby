@@ -23,15 +23,18 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  "#{File.absolute_path("#{File.dirname(__FILE__)}")}/database.yml"
 end
 
 def load
-  { replace: 'me' }
+  YAML.load_file(database)
 end
 
+# The test doesn't make sure it's deleted from the database file.
+# Is this intentional?
 def remove(key)
-  key # fix me
+  new_hash = load
+  new_hash.delete(key.to_sym)
 end
 
 input = ARGV[0]
