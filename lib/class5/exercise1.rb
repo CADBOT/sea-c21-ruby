@@ -32,12 +32,12 @@
 require 'yaml'
 
 def records
-    ['Incentivized methodologies',
-     'Seemless innovation',
-     'Corporate synergy',
-     'Scalable globalization',
-     'Monetized assets'
-    ]
+  ['Incentivized methodologies',
+   'Seemless innovation',
+   'Corporate synergy',
+   'Scalable globalization',
+   'Monetized assets'
+  ]
 end
 
 puts records.to_yaml

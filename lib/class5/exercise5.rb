@@ -34,7 +34,7 @@ def load
 end
 
 def find(id)
-  load[id]
+  load[id - 1]
 end
 
 input = ARGV[0].to_i
