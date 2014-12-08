@@ -28,7 +28,30 @@
 
 # rubocop:disable MethodLength
 def old_school_roman_numeral(num)
-  num # change me
+  roman_numerals = {
+    1000 => 'M',
+    500 => 'D',
+    100 => 'C',
+    50 => 'L',
+    10 => 'X',
+    5 => 'V',
+    1 => 'I'
+  }
+
+  # rubocop doesn't like my use of reduce here...
+  # I could see the benefit of each_with_object
+  # here, as it would allow me to drop out the
+  # extra result statement, however, I find
+  # roman_numerals.keys.each_with_object to be a little
+  # long looking
+  # rubocop:disable EachWithObject
+  roman_numerals.keys.reduce('') do |result, divisor|
+    while num / divisor > 0 && num > 0
+      result += roman_numerals[divisor]
+      num -= divisor
+    end
+    result
+  end
 end
 
 input = ARGV[0].to_i

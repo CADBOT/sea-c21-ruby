@@ -32,18 +32,32 @@
 #
 # TIP #2: Use `return` to preemptively exit the `ask` method.
 
-def ask(question)
-  puts question
+# Intentional divergence from the class style guide. I personally
+# omit preferences if the method is a keyword, intended to be used
+# as part of a DSL, or if the method is an accessor/mutator. I include
+# them at all other times, suck as in my ask function below
+#
+# These rules are a little complex to start off with though, so from
+# a pedagogic standpoint, I do like the rules given in this class.
+#
+# I also encourage short methods, but I think 10 lines might be a little
+# too strict. I made a 9 line version of this function, and it was less
+# clear in my opinion.
+
+# rubocop:disable MethodLength
+def ask()
+  puts 'Do you like eating tacos? (y or n)'
   input = gets.chomp
   if input == 'y'
-    puts 'We can be friends!'
+    print 'We can be friends!'
     return
   end
   if input == 'n'
-    puts 'Get out of my sight!'
+    print 'Get out of my sight!'
     return
   end
-  ask('Try again')
+  puts 'Try again'
+  ask()
 end
 
-puts ask('Do you like eating tacos? (y or n)')
+puts ask()

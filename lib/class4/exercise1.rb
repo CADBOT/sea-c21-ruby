@@ -35,14 +35,13 @@
 #     Returns a new Array created by sorting `array`.
 #
 #     ['cat', 'bird'].sort  #=> ['bird', 'cat']
-puts "Type some words to be sorted alphabetically:"
+puts 'Type some words to be sorted alphabetically:'
 words = []
 loop do
   input = gets.chomp
-  break if input == ""
+  break if input == ''
   words << input
 end
 
-puts "Sweet! Here they are in alphabetical order:"
+puts 'Sweet! Here they are in alphabetical order:'
 words.sort.each { |word| puts word }
-
