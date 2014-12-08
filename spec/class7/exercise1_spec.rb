@@ -171,41 +171,41 @@ RSpec.describe Integer do
 end
 
 RSpec.describe Array do
-  it 'gets the 2nd element of an Array with 3 elements' do
+  it 'gets the 2nd element of an Array with 3 elements' do
     expect([10, 20, 30].second).to eq(20)
   end
 
-  it 'gets the 2nd element of an Array with 2 elements' do
+  it 'gets the 2nd element of an Array with 2 elements' do
     expect([10, 20].second).to eq(20)
   end
 
-  it 'gets the 2nd element of an Array with 1 elements' do
+  it 'gets the 2nd element of an Array with 1 elements' do
     expect([10].second).to be_nil
   end
 
-  it 'gets the 2nd element of an Array with 0 elements' do
+  it 'gets the 2nd element of an Array with 0 elements' do
     expect([].second).to be_nil
   end
 end
 
 RSpec.describe Array do
-  it 'gets the 3rd element of an Array with 4 elements' do
+  it 'gets the 3rd element of an Array with 4 elements' do
     expect([10, 20, 30, 40].third).to eq(30)
   end
 
-  it 'gets the 3rd element of an Array with 3 elements' do
+  it 'gets the 3rd element of an Array with 3 elements' do
     expect([10, 20, 30].third).to eq(30)
   end
 
-  it 'gets the 3rd element of an Array with 2 elements' do
+  it 'gets the 3rd element of an Array with 2 elements' do
     expect([10, 20].third).to be_nil
   end
 
-  it 'gets the 3rd element of an Array with 1 elements' do
+  it 'gets the 3rd element of an Array with 1 elements' do
     expect([10].third).to be_nil
   end
 
-  it 'gets the 3rd element of an Array with 0 elements' do
+  it 'gets the 3rd element of an Array with 0 elements' do
     expect([].third).to be_nil
   end
 end
