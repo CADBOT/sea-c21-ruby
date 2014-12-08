@@ -39,7 +39,7 @@
 #
 # It's really cool that you are teaching students about immutability like this!
 class OrangeTree
-  attr_accessor :fruit
+  attr_reader :fruit
 
   def initialize(fruit = 50)
     @fruit = fruit
@@ -50,6 +50,11 @@ class OrangeTree
   end
 
   def pick!(amount = 1)
+    return nil if fruit < amount
+    @fruit -= amount
+  end
+
+  def pick(amount = 1)
     return nil if fruit < amount
     OrangeTree.new(fruit - amount)
   end

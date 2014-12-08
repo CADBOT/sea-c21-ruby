@@ -32,6 +32,9 @@ class OrangeTree
 
   def pick!(amount = 1)
     return nil if fruit < amount
-    self.fruit -= amount 
+    self.fruit -= amount
   end
 end
+
+t = OrangeTree.new
+puts t.pick!
