@@ -32,7 +32,7 @@ END
   context 'with an argument of 6' do
     before { ARGV[0] = 6 }
 
-    it 'displays an error because no records match a user-given id number' do
+    it 'displays an error because no records match a user-given id number' do
       message = <<-END
 Could't find record #6 from #{database}
 END
